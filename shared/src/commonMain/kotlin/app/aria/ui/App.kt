@@ -53,6 +53,7 @@ import androidx.compose.ui.input.key.onPreviewKeyEvent
 import androidx.compose.ui.input.key.type
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import app.aria.AriaApp
@@ -105,7 +106,7 @@ private fun MainScreen(ui: UiState, c: AssistantController, pal: Palette, onSett
         } else {
             Column(Modifier.fillMaxSize()) {
                 TopBar(ui, c, pal, onSettings)
-                val stageH = maxHeight * 0.34f
+                val stageH = Dp(maxHeight.value * 0.34f)
                 Stage(ui, pal, Modifier.fillMaxWidth().height(stageH))
                 Chat(ui, pal, Modifier.weight(1f).fillMaxWidth())
                 InputBar(ui, c, pal)
