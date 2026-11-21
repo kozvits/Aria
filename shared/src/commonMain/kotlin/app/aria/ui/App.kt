@@ -106,7 +106,7 @@ private fun MainScreen(ui: UiState, c: AssistantController, pal: Palette, onSett
         } else {
             Column(Modifier.fillMaxSize()) {
                 TopBar(ui, c, pal, onSettings)
-                val stageH = Dp(maxHeight.value * 0.34f)
+                val stageH = 340.dp
                 Stage(ui, pal, Modifier.fillMaxWidth().height(stageH))
                 Chat(ui, pal, Modifier.weight(1f).fillMaxWidth())
                 InputBar(ui, c, pal)
