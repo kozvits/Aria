@@ -19,7 +19,7 @@ compose.desktop {
             targetFormats(TargetFormat.Msi, TargetFormat.Exe)
             packageName = "Aria"
             packageVersion = "1.0.0"
-            description = "Голосовая виртуальная ассистентка"
+            description = "Aria Voice Assistant"
             // includeAllModules — чтобы в установщик попали TLS-провайдеры и javax.sound без ручного списка модулей
             includeAllModules = true
             windows {
